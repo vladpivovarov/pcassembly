@@ -1,4 +1,4 @@
-# «Movea - макет онлайн кинотеатра»[href]
+# «Сборка ПК»[href]
 
 ---
 
@@ -40,6 +40,4 @@ git clone SSH-адрес_вашего_форка
 
 ---
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[href]: https://vladpivovarov.github.io/movea/build
+[href]: https://vladpivovarov.github.io/pcassembly/build
