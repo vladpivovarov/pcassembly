@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Собираем ПК</title>
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
     <script src="./js/accordeon.js" defer></script>
     <script src="./js/modal.js" defer></script>
+    <script src="./js/smoothscroll.js" defer></script>
 </head>
 
 <body>
@@ -19,9 +21,9 @@
             </a>
             <div class="header__menu">
                 <nav class="header__nav block-center-horis">
-                    <a href="#">Чем занимаемся</a>
-                    <a href="#">Процесс работы</a>
-                    <a href="#">Команда</a>
+                    <a href="#doing">Чем занимаемся</a>
+                    <a href="#process">Процесс работы</a>
+                    <a href="#family">Команда</a>
                 </nav>
                 <button class="button header__button">Зайти в кабинет</button>
             </div>
@@ -89,7 +91,7 @@
             </div>
         </div>
 
-        <section class="work">
+        <section class="work" id="doing">
             <div class="container">
                 <div class="work__wrap">
                     <div class="work__img">
@@ -106,7 +108,7 @@
             </div>
         </section>
 
-        <section class="process">
+        <section class="process" id="process">
             <div class="container">
                 <div class="process__wrap">
                     <div class="process__title block-center-horis">
@@ -204,7 +206,7 @@
             </div>
         </section>
 
-        <section class="command">
+        <section class="command" id="family">
             <div class="container">
                 <div class="process__title command__title">
                     <div class="process__img command__img-title">
