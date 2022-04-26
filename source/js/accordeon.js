@@ -1,33 +1,27 @@
+const accordeon = () => {
+  // РЕАЛИЗАЦИЯ АККОРДЕОНА
+  const contentArray = document.querySelectorAll(".program-line__content");
 
-// Проверить, подключился ли js на страницу
-document.documentElement.classList.remove("no-js");
+  contentArray.forEach((content, index) => {
+    const title = content.querySelector(".program-line__title");
+    const descr = content.querySelector(".program-line__descr");
 
-
-// РЕАЛИЗАЦИЯ АККОРДЕОНА
-
-const contentArray = document.querySelectorAll(".program-line__content");
-
-contentArray.forEach((content, index) => {
-  const title = content.querySelector(".program-line__title");
-  const descr = content.querySelector(".program-line__descr");
-
-  descr.style.transition = "height 0.3s";
+    descr.style.transition = "height 0.3s";
 
 
-  title.addEventListener("click", () => {
+    title.addEventListener("click", () => {
 
-    contentArray.forEach((contentAgain, i) => {
+      contentArray.forEach((contentAgain, i) => {
 
-      const descrAgain = contentAgain.querySelector(".program-line__descr");
-      if (i === index) {
-        descr.style.height = descr.scrollHeight + "px";
-      } else {
-        descrAgain.style.height = "0";
-      }
-    });
+        const descrAgain = contentAgain.querySelector(".program-line__descr");
+        if (i === index) {
+          descr.style.height = descr.scrollHeight + "px";
+        } else {
+          descrAgain.style.height = "0";
+        }
+      });
+    })
   })
-})
+}
 
-// descr.style.height = descr.scrollHeight;
-
-//   descr.style.height = "0";
+accordeon();

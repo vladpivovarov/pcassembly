@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Собираем ПК</title>
     <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+    <script src="./js/main.js" defer></script>
     <script src="./js/accordeon.js" defer></script>
     <script src="./js/modal.js" defer></script>
     <script src="./js/smoothscroll.js" defer></script>
+    <script src="./js/timer.js" defer></script>
+    <script src="./js/sendform.js" defer></script>
 </head>
 
 <body>
@@ -36,19 +39,19 @@
                 <h1 class="main-display__header">Собираем игровой ПК под ваш бюджет</h1>
                 <div class="timer main-display__timer">
                     <div class="timer__item block-center">
-                        <div class="timer__count timer__days">18</div>
+                        <div class="timer__count timer__days">00</div>
                         <div class="timer__text">Дней</div>
                     </div>
                     <div class="timer__item block-center">
-                        <div class="timer__count timer__hours">18</div>
+                        <div class="timer__count timer__hours">00</div>
                         <div class="timer__text">Часов</div>
                     </div>
                     <div class="timer__item block-center">
-                        <div class="timer__count timer__minutes">18</div>
+                        <div class="timer__count timer__minutes">00</div>
                         <div class="timer__text">Минут</div>
                     </div>
                     <div class="timer__item block-center">
-                        <div class="timer__count timer__seconds">18</div>
+                        <div class="timer__count timer__seconds">00</div>
                         <div class="timer__text">Секунд</div>
                     </div>
                 </div>
@@ -274,15 +277,15 @@
             <div class="modal__subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</div>
             <div class="modal__elements block-center-horis">
                 <div class="modal__input">
-                    <input type="text" class="modal__input">
+                    <input type="text" name="name" class="modal__input" placeholder="Введите ваше имя">
                 </div>
                 <div class="modal__input">
-                    <input type="tel" class="modal__input">
+                    <input type="tel" name="tel" class="modal__input" placeholder="Введите ваш телефон">
                 </div>
                 <div class="modal__input">
-                    <input type="email" class="modal__input">
+                    <input type="email" name="email" class="modal__input" placeholder="Введите ваш email">
                 </div>
-                <button type="button" class="button modal__button">Отправить</button>
+                <button type="submit" class="button modal__button">Отправить</button>
             </div>
         </div>
     </form>
